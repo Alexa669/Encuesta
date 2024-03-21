@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+</head>
+<body>
+    <header>
+        <h1>Encuesta de Satisfacción</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Descripción:</h2>
+            <p>Encuesta de <em>satisfacción</em> de uso del servicio a domicilio <strong>McDonalds del semestre 01 del año 2024.</strong><br>
+                Por favor, ayúdanos a mejorar nuestros servicios respondiendo a esta breve encuesta de satisfacción.</p>
+            <p><a href="https://mcdonalds.com.gt/">Página de McDonalds</a></p>
+        </section>
+
+        <section>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/2560px-McDonald%27s_logo.svg.png" alt="Logo de Mcdonalds" width="300">
+        </section>
+
+        <section>
+            <h2>Encuesta</h2>
+            <form action="http://localhost:8002/encuesta" method="post">
+            <table>
+                <tr>
+                    <td><label>Escribe tu nombre:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>¿Qué tan satisfecho está con la calidad de la comida que recibiste?</label></td>
+                </tr>
+                <tr>
+                    <td> 
+                        <input type="range" id="valoracion" min="1" max="5" value="3" list="ticks">
+                        <datalist id="ticks">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                        </datalist>
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>¿Cómo calificarías la velocidad de entrega de tu pedido?</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select>
+                            <option>Muy lenta</option>
+                            <option>Lenta</option>
+                            <option>Normal</option>
+                            <option>Rápida</option>
+                            <option>Muy rápida</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>¿La comida llegó caliente y en buen estado?</label></td>           
+                </tr>
+                <tr>
+                    <td>
+                        <label for="si">
+                            <input id="si" type="radio" name="Sí">Sí</label>
+                        <label for="no">
+                            <input id="no" type="radio" name="No">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>¿La entrega se realizó dentro del tiempo estimado?</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="si">
+                            <input id="si" type="radio" name="Sí">Sí</label>
+                        <label for="no">
+                            <input id="no" type="radio" name="No">No</label>
+                    </td>
+                </tr>
+            </tr>
+            <tr>
+                <td><label>¿El proceso de pedido en línea fue fácil y claro?</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option>Muy difícil</option>
+                        <option>Difícil</option>
+                        <option>Normal</option>
+                        <option>Fácil</option>
+                        <option>Muy fácil</option>
+                    </select>
+                 </td>
+            </tr>
+            <tr>
+                <td><label>¿Hay algún comentario adicional que te gustaría compartir sobre tu experiencia con nuestro servicio?</label></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+            </table>
+        </form>
+        </section><br>
+        
+        <section>
+            <aside>
+                <h2>Síguenos en Redes Sociales</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/Mcdonalds.Guatemala" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/mcguate?lang=es" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/mcguate/?hl=es" target="_blank">Instagram</a></li>
+                </ul>   
+            </aside><br><br><br>
+         </section>
+
+        <footer>Encuesta creada por McDonalds marzo 2024.</footer>
+    </main>
+</body>
+</html>
