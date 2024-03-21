@@ -1,0 +1,145 @@
+:root{
+    --color-background-layer-1: #1b1b36;
+    --color-background-layer-2: #34346c;
+    --color-white: #f3f3f3;
+}
+
+body{
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    color:var(--color-white) ;
+    
+}
+
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background:var(--color-background-layer-1) ;
+    background-image: linear-gradient(115deg, rgba(118, 118, 165, 0.8), rgba(208, 208, 236, 0.7));
+}
+
+header {
+    display: flex; 
+    align-items: center; 
+    padding: 1rem 0.7rem 1rem 0.7rem;
+    background-color: var(--color-background-layer-2); 
+}
+
+h1 {
+    margin-right: 20px; 
+}
+
+img {
+    margin-left: auto; 
+}
+
+p{
+    margin: 0;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.slider-container {
+    text-align: center;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.slider-labels p {
+    margin: 0;
+    font-size: 14px;
+}
+
+input, button, select, textarea{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin-bottom: 15px; 
+    vertical-align: middle;
+}
+
+button{
+    border: none;
+}
+
+.description{
+    font-style: italic;
+    font-weight:200 ;
+
+}
+
+form{
+    background: var(--color-background-layer-1);
+    padding: 2.5rem 0.625rem 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+}
+
+.container{
+    width: 50%;
+    margin: 3.125rem auto 0 auto;
+}
+
+
+.form-group{
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    height: 2.25rem;
+    padding: 0.35rem 0.75rem 0.35rem 0.75rem;
+    color: gray;
+    border: 1px solid #ced4da;
+}
+
+.input-radio{
+    display: inline-block;
+    margin-right: 0.65rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-textarea{
+    min-height: 120px;
+    width: 80%;
+    padding: 0.65rem;
+    resize: vertical;
+}
+
+.submit-button{
+    display: block;
+    width: 104%;
+    padding: 0.75rem;
+    color: inherit;
+    border-radius: 2px; 
+    cursor: pointer;
+    background: #816dcca9;
+}
+
+footer{
+    text-align: center;
+}
+
